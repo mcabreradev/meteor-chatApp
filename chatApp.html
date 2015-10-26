@@ -1,0 +1,41 @@
+<body>
+<div class="container">
+    <header>
+        {{> loginButtons}}
+    </header>
+
+    <div class="row">
+        <!-- Chatt -->
+        <div class="col-md-10 col-sm-10 col-xs-10">
+            <ul>
+                <h4 class="currentRoom text-primary">Room: <span id="currentRoom">{{currentRoom}}</span></h4>
+                {{#each recentMessages}}
+                <li>
+                    <div class="username">{{username}} <span
+                            style="font-size: 0.7em; color: darkgray">({{timestamp}})</span></div>
+                    <div class="message">{{text}}</div>
+                </li>
+                {{/each}}
+            </ul>
+            <footer>
+                {{#if currentUser}}
+                <form class="new-message">
+                    <input type="text" class="form-control" name="text" placeholder="Add a message" autocomplete="off"/>
+                </form>
+                {{/if}}
+            </footer>
+        </div>
+
+        <!-- Rooms -->
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <h4 class="joinRoom bg-primary">Join a room:</h4>
+            <ul>
+                {{#each rooms}}
+                <li style="cursor: pointer;" class="{{roomstyle}}">{{roomname}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>

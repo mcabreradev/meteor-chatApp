@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    background-color: #315481;
+    background-image: radial-gradient(ellipse farthest-corner at 0 0, rgba(0, 0, 0, .2) 0%, rgba(62, 45, 177, .3) 50%,
+    rgba(255, 255, 255, .3) 95%), linear-gradient(to bottom, #a7cbf9, #25da8e 100%);
+    background-attachment: fixed;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    flex: 1;
+    text-align: right;
+}
+
+ul {
+    flex: 999;
+}
+
+footer {
+    padding: 10px 0 0 0;
+}
+
+header {
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+}
+
+#login-buttons {
+    display: block;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.joinRoom {
+    color: white;
+}
+
+form {
+    margin: 0;
+}
+
+.new-message input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    border: none;
+    height: 40px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-height: 340px;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    border-bottom: #eee solid 1px;
+    opacity: 0;
+    transform: translateX(-25px);
+    -webkit-animation: slideIn ease .25s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: slideIn ease .25s;
+    -moz-animation-fill-mode: forwards;
+    animation: slideIn ease .25s;
+    animation-fill-mode: forwards;
+}
+
+div .username {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    li {
+        padding: 12px 15px;
+    }
+
+    .new-message input {
+        padding-top: 15px;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
