@@ -17,10 +17,10 @@ Meteor.methods({
 
 if (Meteor.isServer) {
     Meteor.startup(function() {
-        Messages.remove({});
+        // Messages.remove({});
         Rooms.remove({});
         if (Rooms.find().count() === 0) {
-            ["Meteor", "JavaScript", "Reactive", "MongoDB", "Polimer", "Angularjs"].forEach(function(r) {
+            ["Meteor", "JavaScript", "Reactive", "MongoDB", "Polymer", "Angular"].forEach(function(r) {
                 Rooms.insert({roomname: r});
             });
         }
