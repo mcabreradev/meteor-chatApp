@@ -11,8 +11,7 @@
                 <h4 class="currentRoom text-primary">Room: <span id="currentRoom">{{currentRoom}}</span></h4>
                 {{#each recentMessages}}
                 <li>
-                    <div class="username">{{username}} <span
-                            style="font-size: 0.7em; color: darkgray">({{timestamp}})</span></div>
+                    <div class="username">{{username}} <span style="font-size: 0.7em; color: darkgray">({{timestamp}})</span></div>
                     <div class="message">{{text}}</div>
                 </li>
                 {{else}}
@@ -33,7 +32,7 @@
             <h4 class="joinRoom bg-primary">Join a room:</h4>
             <ul>
                 {{#each rooms}}
-                <li style="cursor: pointer;" class="{{roomstyle}}" data-roomname="{{roomname}}">{{roomname}}</li>
+                <li style="cursor: pointer;" class="liRoom {{roomstyle}}" data-roomname="{{roomname}}">{{roomname}}</li>
                 {{/each}}
             </ul>
         </div>

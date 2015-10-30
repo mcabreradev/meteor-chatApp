@@ -74,7 +74,7 @@ if (Meteor.isClient) {
 
             return false;
         },
-        'click li': function(event) {
+        'click .liRoom': function(event) {
             Session.set("currentRoom", event.target.innerText);
             ServerSession.set('currentRoom', event.target.innerText);
 
