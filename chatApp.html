@@ -33,7 +33,7 @@
             <h4 class="joinRoom bg-primary">Join a room:</h4>
             <ul>
                 {{#each rooms}}
-                <li style="cursor: pointer;" class="{{roomstyle}}">{{roomname}}</li>
+                <li style="cursor: pointer;" class="{{roomstyle}}" data-roomname="{{roomname}}">{{roomname}}</li>
                 {{/each}}
             </ul>
         </div>

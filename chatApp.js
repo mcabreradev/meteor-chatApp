@@ -54,7 +54,7 @@ if (Meteor.isClient) {
             return Rooms.find();
         },
         roomstyle: function() {
-            return Session.equals("currentRoom", this.currentRoom) ? "text-success" : 'text-muted';
+            return Session.equals("currentRoom", this.roomname) ? "bg-primary" : 'text-muted';
         }
     });
 
