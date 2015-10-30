@@ -63,6 +63,11 @@ if (Meteor.isClient) {
             var text = event.target.text.value;
             var currentRoom = Session.get("currentRoom");
 
+            // prevent send empty msjs..
+            if (_.isEmpty(text)) {
+                return false;
+            }
+
             Meteor.call("sendMessage", text, currentRoom);
             event.target.text.value = '';
             $(event.currentTarget).focus();

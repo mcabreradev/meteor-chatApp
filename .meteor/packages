@@ -23,3 +23,4 @@ accounts-facebook
 bootstrap
 twbs:bootstrap
 matteodem:server-session
+erasaur:meteor-lodash
