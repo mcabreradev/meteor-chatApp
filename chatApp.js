@@ -65,11 +65,15 @@ if (Meteor.isClient) {
 
             Meteor.call("sendMessage", text, currentRoom);
             event.target.text.value = '';
+            $(event.currentTarget).focus();
+
             return false;
         },
         'click li': function(event) {
             Session.set("currentRoom", event.target.innerText);
             ServerSession.set('currentRoom', event.target.innerText);
+
+            $('#input-box').focus();
         }
     });
 

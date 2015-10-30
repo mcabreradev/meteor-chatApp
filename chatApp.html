@@ -16,13 +16,13 @@
                     <div class="message">{{text}}</div>
                 </li>
                 {{else}}
-                  <span style="padding: 1rem;"> </span>
+                  <span style="padding: 1rem;"></span>
                 {{/each}}
             </ul>
             <footer>
                 {{#if currentUser}}
                 <form class="new-message">
-                    <input type="text" class="form-control" name="text" placeholder="Add a message" autocomplete="off"/>
+                    <input type="text" id="input-box" class="form-control" name="text" placeholder="Add a message" autocomplete="off"/>
                 </form>
                 {{/if}}
             </footer>
